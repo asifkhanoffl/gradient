@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #4E3636;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul li a {
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    flex-direction: column;
+    background-color: #F1C93B;
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin: 10px;
+    transform: rotate(8deg);
+    transition: transform 0.3s linear;
+}
+
+
+
+ul li a h2 {
+    color: #1A5D1A;
+}
+
+ul li:nth-child(3n) a {
+    background-color: #AAC8A7;
+    position: relative;
+    top: 15px;
+    transform: rotate(-8deg);
+}
+
+ul li:nth-child(1) a {
+    transform: rotate(-37deg);
+    background-color: #FF9B9B;
+}
+
+ul li:nth-child(5n) a {
+    transform: rotate(27deg);
+    color: white;
+    background-color: #46458C;
+}
+
+ul li:nth-child(5n) a h2 {
+    color: aqua;
+}
+
+ul li a:hover,
+ul li a:focus {
+    transform: scale(1.2);
+    z-index: 99;
+    position: relative;
+}
+
+ul li a span {
+    background-color: red;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    right: -5%;
+    top: -5%;
+    border-radius: 50%;
+
+}
+
+ul li a span:hover {
+    cursor: pointer;
+}
